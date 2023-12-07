@@ -1,0 +1,128 @@
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    background-color: #f9e0ae;
+    background-size: cover;
+    font-family: 'DM Sans';
+}
+.line-height {
+    line-height: 1.6;
+}
+.contact .content 
+{
+    max-width: 800px;
+    font-style: initial;
+    text-align: left;
+    font-family: 'DM Sans';
+
+}
+.contact .content h2
+{
+    font-size: 36px;
+    text-align: left;
+    font-weight: 500;
+    color:black; 
+    font-family: 'DM Sans';
+}
+.contact .content p
+{
+    font-weight: 300; 
+    text-align: left;
+    color:black; 
+    font-family: 'DM Sans';
+}
+.container
+{
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex; 
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    border-radius: 50%;
+    font-size: 22px;
+    font-family: DM Sans;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    flex-direction: column;
+    font-family: 'DM Sans';
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: black;
+    font-family: 'DM Sans';
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    font-family: 'DM Sans';
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #f9e0ae; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    font-family: 'DM Sans';
+  }
+  
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Sans';
+  }
+  
+  input[type=submit]:hover {
+    background-color: #fcd569;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f9e0ae;
+    padding: 20px;
+    font-family: 'DM Sans';
+  }
+
+
+
