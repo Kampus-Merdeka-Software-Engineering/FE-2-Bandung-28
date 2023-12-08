@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Genral Styles */
+body {
+    font-family:  " darkline", sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #FDC659;
+    color: black;
+    padding: 1.3rem;
+  }
+  
+  header h1 {
+    display: inline;
+    margin-right: 0rem;
+  
+  }
+  nav {
+    position: absolute;
+    top: 32px;
+    right: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2.1;
+  }
+  
+  nav ul li {
+    display: inline; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about {
+    padding: 0.3rem;
+    flex-direction: column;align-items: center;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* End Genral Styles */
+
+
 body {
     background-color: white;
 }
@@ -5,55 +71,6 @@ body {
 body {
     font-family: Arial, sans-serif, darkline;
     line-height: 1.6;
-}
-
-header {
-    background-color: orange;
-    color: white;
-    padding: 1rem;
-}
-
-header h1 {
-    display: inline;
-    margin-right: 1rem;
-
-}
-
-nav ul {
-    display: inline;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-}
-
-.about {
-    padding: 2rem;
-}
-
-.editorial-team {
-    padding: 2rem;
-}
-
-footer {
-    background-color: orange;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
 }
 
 #highlight {
@@ -164,10 +181,123 @@ footer {
     margin: 0;
   }
   
-  footer {
-    background-color: orange;
-    color: white;
+/* Footer */
+footer {
+    background-color: #FDC659;
+    color: black;
+    padding: 12px 0;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
+    margin-top: 1rem;
+  }
+  .focus {
+    background: #FDC659;
+  }
+  
+  .bottom-footer {
+    margin-top: 1.7rem;
+    padding: 0 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .copyright .text {
+    color: #000000;
+    font-size: 0.9rem;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .copyright .text span {
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  
+  .followme-wrap {
+    display: flex;
+  }
+  
+  .followme {
+    display: flex;
+    align-items: center;
+  }
+  
+  .followme h3 {
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .followme .footer-line {
+    width: 60px;
+    height: 2px;
+    background-color: #7b7b7b;
+    margin: 0 0.9rem;
+    display: inline-block;
+  }
+  
+  .social-media a {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+    transition: 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: var(--main-color);
+  }
+  
+  .back-btn-wrap {
+    position: relative;
+    margin-left: 2.5rem;
+  }
+  
+  .back-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background-color: #FC8621;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .back-btn:hover {
+    background-color: #7A7A7A;
+  }
+  
+  .back-btn-wrap:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #FDC659;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    border-radius: 50%;
+    opacity: 0.08;
+    animation: scale 1.2s ease-out infinite 1s;
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.15;
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) scale(1.6);
+      opacity: 0;
+    }
+  }
+  
+  /* End Footer */
+  
