@@ -142,20 +142,17 @@ html {
     color: black;
     font-weight: 300;
     flex-direction: column;
-    font-family: 'DM Sans';
 }
 .container .contactInfo .box .text h3
 {
     font-weight: 500;
     color: black;
-    font-family: 'DM Sans';
 }
 .contactForm
 {
     width: 40%;
     padding: 40px;
     background: white;
-    font-family: 'DM Sans';
 }
 input[type=text], select, textarea {
     width: 100%; 
@@ -166,7 +163,6 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical ;
-    font-family: 'DM Sans';
 }
 
 input[type=submit] {
@@ -176,7 +172,6 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'DM Sans';
 }
 
 input[type=submit]:hover {
@@ -186,7 +181,6 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f9e0ae;
     padding: 20px;
-    font-family: 'DM Sans';
 }
 
 /* Footer */
@@ -309,4 +303,24 @@ footer {
 
 /* End Footer */
 
+@media all and (min-width: 800px) {
+  .contactInfo {
+    flex: 2;
+  }
+  .contactForm {
+    order: 2;
+  }
+  .contactInfo {
+    order: 1;
+    }
+  .bottom-footer .back-btn-wrap .followme-wrap {
+    order: 4;
+  }
 
+  }
+
+@media all and (min-width: 600px) {
+  .contactForm {
+    flex: 1;
+  }
+}
