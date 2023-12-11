@@ -1,19 +1,25 @@
 const container =document.getElementById('container')
 const template = (item) =>{
     return `
-    <div>
-        <p>Name: ${item.name}</p>
-        <p>Course: ${item.Course}</p>
+    <article class="article-awal">
+    <div class="news-image">
+        <img src=${item.imageurl} class="news-image" alt="Gambar Berita 1">
     </div>
+    <div class="news-content">
+        <h3>${item.judul}</h3>
+        <p>Ditulis oleh ${item.namepenulis}</p>
+        <a href=${item.urlsumber}>Baca Selengkapnya</a>
+    </div>
+    </article>
     `
 }
 
 
-fetch('http://localhost:3008/')
+fetch('https://be-2-bandung-28-production.up.railway.app/berita')
     .then(data => data.json())
     .then(datajson => {
         console.log(datajson)
         let content= ''
-        datajson.data.map(item => content += template(item))
+        datajson.map(item => content += template(item))
         container.innerHTML = content
     })

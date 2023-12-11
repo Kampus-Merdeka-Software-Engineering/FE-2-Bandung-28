@@ -95,6 +95,9 @@ html {
   grid-column: 1;
 }
 
+.news-image {
+  object-fit: cover;
+}
 
 /*Today */ 
 .Today h2 {
